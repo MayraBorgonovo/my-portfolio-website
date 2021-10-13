@@ -18,6 +18,18 @@
   width: 100%;
 }
 
+.content a {
+  margin: 1rem 3rem;
+  display: inline-block;
+}
+
+.content a:hover,
+.content a:focus {
+  color: #56e9f3;
+  transform: scale(1.1);
+  transition: all .2s linear;
+}
+
 @media (max-width: 768px) {
   .images, 
 .content {

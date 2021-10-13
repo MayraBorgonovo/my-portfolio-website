@@ -21,6 +21,10 @@ body {
   letter-spacing: .2rem;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
 a {
   color: inherit;
   text-decoration: none;

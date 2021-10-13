@@ -16,6 +16,7 @@
   border: none;
   margin: 2rem;
   cursor: pointer;
+  float: right;
 }
 
 .closeBtn:hover {

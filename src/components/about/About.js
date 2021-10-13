@@ -4,7 +4,7 @@ import classes from "./About.module.css";
 
 const About = () => {
     const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.4,
   });
 
   const scrollClasses = inView ? classes.visible : classes.hidden;
