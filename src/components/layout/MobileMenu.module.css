@@ -1,0 +1,80 @@
+.mobile {
+  background: none;
+  text-align: right;
+}
+
+.mobileNav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 30vh;
+  padding: 2rem;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-100%);
+}
+
+.mobileNav a {
+  padding: .5rem 0;
+  transition: color 0.3s linear;
+}
+
+.mobileNav a:hover,
+.mobileNav a:focus {
+  color: #56e9f3;
+}
+
+.burger {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2.2rem;
+  height: 2.1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.burger:focus {
+  outline: none;
+}
+
+.burger div {
+  width: 100%;
+  height: 0.25rem;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+  background: white;
+}
+
+.mobileNav.visible {
+  transform: translateY(0%);
+}
+
+.burger.visible div:first-child {
+  transform: rotate(45deg);
+}
+
+.burger.visible div:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.burger.visible div:last-child {
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 769px) {
+  .mobile {
+    display: none;
+  }
+}

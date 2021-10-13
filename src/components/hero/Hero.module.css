@@ -1,0 +1,98 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 130vh;
+  overflow: hidden;
+  background-image: url('../../assets/background.png');
+  background-position: right;
+  background-size: cover;
+}
+
+.intro {
+  position: absolute;
+  top: 20vh;
+  left: 25%;
+  z-index: 10;
+  animation: drop .6s both;
+}
+
+.intro h1 {
+  color: #56e9f3;
+  font-size: 4.5rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 101%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.layer.vector {
+  height: 130vh;
+}
+
+.container .layer img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.layer.vector img {
+  right: 0;
+  object-fit: contain;
+}
+
+.layer.object img {
+  animation: grow .6s 0.4s both;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 120vh;
+  }
+
+  .intro {
+    left: 5%;
+    padding: 1rem;
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+  
+  .container .layer img {
+    object-fit: contain;
+  }
+
+  .layer.vector img {
+    width: 100%;
+  }
+}
+

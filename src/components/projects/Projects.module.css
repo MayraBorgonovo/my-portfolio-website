@@ -1,0 +1,53 @@
+.projects {
+  width: 100%;
+  text-align: center;
+}
+
+.projectCards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.projectCards div {
+  cursor: pointer;
+  position: relative;
+  width: 30%;
+  margin: 4rem;
+}
+
+.projectCards img {
+  position: relative;
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.projectCards div::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.projectCards h2 {
+  position: absolute;
+top: 9rem;
+left: -4rem;
+font-size: 2rem;
+z-index: 5;
+}
+
+@media screen and (max-width: 768px) {
+  .projectCards div {
+    width: 60%;
+  }
+}

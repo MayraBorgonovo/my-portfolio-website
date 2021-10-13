@@ -1,0 +1,46 @@
+.imgCtn {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selected img {
+  width: 80%;
+}
+
+.selected button {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 2rem;
+  border-radius: 3px;
+}
+
+.selected button:hover {
+  background: rgb(76 75 75 / 80%);
+  cursor: pointer;
+}
+
+.imgGallery {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.imgGallery img {
+  max-width: 10rem;
+  margin: 2rem 1rem;
+  cursor: pointer;
+}
+
+.active {
+  box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 28%);
+}

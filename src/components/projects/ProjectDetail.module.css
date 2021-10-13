@@ -1,0 +1,27 @@
+.images, 
+.content {
+  padding: 1rem 2rem;
+  text-align: center;
+  min-width: 39rem;
+}
+
+.images {
+  width: 60%;
+}
+ 
+.content {
+  width: 40%;
+}
+
+.images img {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .images, 
+.content {
+  width: 95%;
+  padding: 1rem;
+}
+}

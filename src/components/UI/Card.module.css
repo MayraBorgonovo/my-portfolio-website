@@ -1,0 +1,28 @@
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  margin: 1rem;
+}
+
+.visible {
+  animation: flip 1s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.card:hover {
+  animation: grow .5s both;
+}
+
+@keyframes flip {
+    0% {
+      transform: rotateY(90deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
+
+@keyframes grow {
+  100% {
+    transform: scale(1.1);
+  }
+}

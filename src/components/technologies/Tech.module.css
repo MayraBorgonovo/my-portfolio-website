@@ -1,0 +1,39 @@
+.techCtn {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  text-align: center;
+  background-image: url('../../assets/about-blob.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tech {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.tech div {
+  background: linear-gradient(
+    116deg, #b71ff3c4, #00000026);
+    padding: 2rem 2.5rem 1rem;
+}
+
+.tech ul {
+  padding: 2rem 3rem;
+  list-style: none;
+}
+
+@media screen and (max-width: 780px) {
+  .techCtn {
+    background-size: contain;
+  }
+
+  .tech {
+    flex-direction: column;
+  }
+}
