@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import {Link} from 'react-scroll'; 
-import classes from './Header.module.css';
 import Logo from '../../assets/logo.png';
 import MobileMenu from "./MobileMenu";
+import classes from './Header.module.css';
 
 const Header = () => {
    const [scrolled, setScrolled] = useState(false);

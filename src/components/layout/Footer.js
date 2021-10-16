@@ -1,6 +1,6 @@
-import classes from './Footer.module.css';
 import { FiGithub, FiMail } from 'react-icons/fi';
 import { FaLinkedinIn } from 'react-icons/fa';
+import classes from './Footer.module.css';
 
 const Footer = () => {
 

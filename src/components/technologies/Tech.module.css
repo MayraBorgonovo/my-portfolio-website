@@ -5,13 +5,9 @@
   align-items: center;
   padding: 5rem;
   text-align: center;
-  background-image: url('../../assets/about-blob.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.tech ul {
+.list ul {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
@@ -20,8 +16,17 @@
   list-style: none;
 }
 
-.tech ul li {
+.image {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.list ul li {
   margin: 3rem 2rem;
+}
+
+.content {
+  min-height: 80vh;
 }
 
 .visible li {
@@ -89,8 +94,13 @@
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
   .techCtn {
-    background-size: contain;
+    padding-top: 10rem;
   }
+
+  .image {
+    margin-top: 20rem;
+  }
+  
 }

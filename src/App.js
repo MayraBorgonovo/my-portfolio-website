@@ -5,24 +5,23 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 
 function App() {
-  //const [showLoading, setShowLoading] = useState(true);
+  const [showLoading, setShowLoading] = useState(true);
 
-  // useEffect(() => {
-  //   const initialTimer = setTimeout(() => {
-  //     setShowLoading(false);
-  //   }, 1500);
+  useEffect(() => {
+    const initialTimer = setTimeout(() => {
+      setShowLoading(false);
+    }, 1500);
 
-  //   return () => {
-  //     clearTimeout(initialTimer);
-  //   }
-  // }, []);
+    return () => {
+      clearTimeout(initialTimer);
+    }
+  }, []);
 
   return (
       <Switch>
         <Route path="/" exact>
-          {/* {showLoading && <Preloader />}
-          {!showLoading && <Home />} */}
-          <Home />
+          {showLoading && <Preloader />}
+          {!showLoading && <Home />}
         </Route>
         <Route path="*">
           <NotFound />
