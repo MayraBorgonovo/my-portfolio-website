@@ -10,7 +10,7 @@ import classes from "./Tech.module.css";
 
 const Tech = () => {
   const { ref, inView } = useInView({
-    threshold: 0.4,
+    threshold: 0.3,
   });
 
   const scrollClasses = inView ? classes.visible : classes.hidden;
@@ -19,8 +19,7 @@ const Tech = () => {
     <IconContext.Provider value={{style: {color: '#56e9f3', margin: '0 auto', fontSize: '4rem', display: 'block'}}}>
       <Parallax strength={200} bgImage={blob} bgClassName={classes.image}>
     <section id="tech"  className={classes.techCtn}>
-      <h2>Technology Stack</h2>
-      <p>Some things I've worked with.</p>
+      <h2>Tech Stack</h2>
       <div className={classes.list}>
           <ul ref={ref} className={scrollClasses}>
             <li><AiOutlineHtml5 />HTML</li>

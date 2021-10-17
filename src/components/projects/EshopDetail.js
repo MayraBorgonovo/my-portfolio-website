@@ -18,15 +18,11 @@ const EshopDetail = (props) => {
       <div className={classes.content}>
         <h1>eShop Demo</h1>
         <p>
-          An e-commerce demo App built with React.js and integrated with
-          Firebase and Stripe. Other technologies used include React Hooks,
-          Redux Toolkit, Redux Persist, and Axios. This is a simple application
-          built as a template for an E-commerce website. The application loads
-          products to a Firebase database and displays them. Users can view
-          products displayed in two categories. Users can click on any product
-          to get more information including pricing, size, an description. Users
-          can select items, add them to their shopping cart, checkout. Users can
-          view their order history from their dashboard.
+          A responsive and customizable application built as a template for an
+          E-commerce website. The application was built with React.js, and uses
+          Firebase as back-end and Stripe for payment processing. Other
+          technologies used include React Hooks, Redux Toolkit, Redux Persist,
+          and Axios.
         </p>
         <a
           href="http://ecommerce-site-d9c6c.web.app/"

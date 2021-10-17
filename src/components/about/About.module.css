@@ -45,7 +45,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .ctn {
     text-align: center;
     justify-content: center;

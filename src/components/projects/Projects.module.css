@@ -28,7 +28,7 @@
 }
 
 .projectCards div::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -40,14 +40,14 @@
 
 .projectCards h2 {
   position: absolute;
-top: 9rem;
-left: -4rem;
-font-size: 2rem;
-z-index: 5;
+  top: 9rem;
+  left: -4rem;
+  font-size: 2rem;
+  z-index: 5;
 }
 
 @media screen and (max-width: 768px) {
   .projectCards div {
-    width: 60%;
+    width: 50%;
   }
 }

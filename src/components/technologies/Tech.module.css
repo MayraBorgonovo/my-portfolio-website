@@ -94,13 +94,20 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .techCtn {
     padding-top: 10rem;
   }
 
   .image {
     margin-top: 20rem;
+  }
+  
+}
+
+@media screen and (max-width: 576px) {
+  .list ul {
+    padding: 2rem 0;
   }
   
 }

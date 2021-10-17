@@ -11,6 +11,7 @@ const Footer = () => {
         <li><a href="https://www.linkedin.com/in/mayra-borgonovo/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a></li>
         <li><a href="mailto:mayra.borgonovo@gmail.com"><FiMail /></a></li>
       </ul>
+      <p>&copy;2021 Mayra Borgonovo</p>
     </footer>
   );
 };

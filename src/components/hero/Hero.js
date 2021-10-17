@@ -9,7 +9,7 @@ const Hero = () => {
       <div className={classes.intro}>
         <p>Hi,</p>
         <h1>I'm Mayra</h1>
-        <p>I'm a front-end web developer based in Sydney.</p>
+        <p>I'm a Front-End Developer based in Sydney.</p>
         <Button><a href="mailto:mayra.borgonovo@gmail.com">Contact Me</a></Button>
       </div>
     </section>

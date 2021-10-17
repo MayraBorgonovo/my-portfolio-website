@@ -18,15 +18,11 @@ const EtrackerDetail = (props) => {
       <div className={classes.content}>
         <h1>Expense Tracker</h1>
         <p>
-          A one-page expense tracker App built with React.js and designed for
-          tablet and mobile use. The technologies used include React Hooks,
-          Local Storage, Context API, and Styled Components. This is a one-page
-          Expense Tracker App. Users can add income and expenses. The
-          application loads the information to local storage and calculates the
-          user's total balance based on entered income and expenses. User can
-          see a yearly expense breakdown by month, and transaction lists by
-          category and month. This app was built for training purposes and
-          according to best practices. It also features light and dark theme.
+          A one-page application that tracks the user's transactions and
+          calculates the user's total balance based on entered income and
+          expenses. The App was built with React.js and designed for tablet and
+          mobile use. The technologies used include React Hooks, Local Storage,
+          Context API, and Styled Components.
         </p>
         <a
           href="https://expense-tracker-9b607.web.app"

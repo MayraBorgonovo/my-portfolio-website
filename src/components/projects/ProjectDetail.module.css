@@ -1,4 +1,4 @@
-.images, 
+.images,
 .content {
   padding: 1rem 2rem;
   text-align: center;
@@ -8,14 +8,9 @@
 .images {
   width: 60%;
 }
- 
+
 .content {
   width: 40%;
-}
-
-.images img {
-  display: block;
-  width: 100%;
 }
 
 .content a {
@@ -27,13 +22,13 @@
 .content a:focus {
   color: #56e9f3;
   transform: scale(1.1);
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
-@media (max-width: 768px) {
-  .images, 
-.content {
-  width: 95%;
-  padding: 1rem;
-}
+@media screen and (max-width: 768px) {
+  .images,
+  .content {
+    width: 100%;
+    padding: 1rem;
+  }
 }

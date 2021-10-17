@@ -28,9 +28,15 @@
   top: 15vh;
   left: 5%;
   width: 90%;
-  max-height: 80vh;
+  max-height: 90vh;
   z-index: 30;
   animation: slide-up 300ms ease-out forwards;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.modal::-webkit-scrollbar {
+  visibility: hidden;
 }
 
 .content {
@@ -41,16 +47,6 @@
   max-width: 1492px;
 }
 
-@media (max-width: 768px) {
-  .modal {
-    width: 100%;
-    left: 0;
-  }
-  .content {
-    flex-wrap: wrap;
-  }
-}
-
 @keyframes slide-up {
   from {
     opacity: 0;
@@ -59,5 +55,16 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 100%;
+    left: 0;
+    top: 10vh;
+  }
+  .content {
+    flex-wrap: wrap;
   }
 }
