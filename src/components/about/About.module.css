@@ -49,6 +49,7 @@
   .ctn {
     text-align: center;
     justify-content: center;
+    margin-top: -10rem;
   }
 
   .about {
